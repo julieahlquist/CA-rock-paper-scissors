@@ -6,7 +6,7 @@ Feature: Create game
 
   Scenario: Play the game against a computer
     Given I visit the site
-    # Then I should see "Rock"
-    # And I should see "Paper"
-    # And I should see "Scissors"
+    Then I should see "Rock"
+    And I should see "Paper"
+    And I should see "Scissors"
     

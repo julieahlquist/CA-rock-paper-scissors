@@ -16,6 +16,12 @@ class RockPaperScissorsWorld {
   async closeHomePage() {
     await this.browser.close() 
   }
+  async pageHasTextContent(expectedContent) {
+    const pageContent = await this.page.content()
+    const actualContent = pageContent.match(expectedContent)[0]
+
+    expect(actualContent).to.be.eq(expectedContent)
+  }
 }
 
 setWorldConstructor(RockPaperScissorsWorld)
