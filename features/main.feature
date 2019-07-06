@@ -9,4 +9,5 @@ Feature: Create game
     Then I should see "Rock"
     And I should see "Paper"
     And I should see "Scissors"
-    
+    When I click "Rock"
+    Then I should see "You clicked rock"
