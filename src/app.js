@@ -1,9 +1,7 @@
-const handleClick = (playerPick) => {
-    console.log('You clicked ' + playerPick)
-    // let picks = ['Rock', 'Paper', 'Scissors']
+document.getElementById("rock").addEventListener("click", function () {
+    console.log('you clicked rock')
+})
 
-    // let randoPick = picks[Math.floor(Math.random() * picks.length)];
-    // let displayPick = document.getElementById('printpick');
-    // displayPick.innerHTML = randoPick
-}
-// document.getElementById("putpick").addEventListener("click", showPick);
+// document.getElementById("paper").addEventListener("click", function () {
+//     console.log('you clicked paper')
+// });

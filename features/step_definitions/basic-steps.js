@@ -10,4 +10,8 @@ Given('I visit the site', async function() {
 
 Then('I should see {string}', async function(content) {
   return await this.pageHasTextContent(content)
+})
+
+When('I click {string}', async function (string) {
+  return await this.clickOnRockBtn(string)
 });
