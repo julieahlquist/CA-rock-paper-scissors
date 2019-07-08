@@ -11,3 +11,7 @@ Feature: Create game
     And I should see "Scissors"
     When I click "Rock"
     Then I should see "You clicked rock"
+    When I click "Paper"
+    Then I should see "You clicked paper"
+    When I click "Scissors"
+    Then I should see "You clicked scissors"

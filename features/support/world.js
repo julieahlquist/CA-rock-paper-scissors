@@ -21,10 +21,23 @@ class RockPaperScissorsWorld {
 
     expect(actualContent).to.be.eq(expectedContent)
   }
-  async clickOnRockBtn() {
-    const btnSelector = '.rock'
+  async clickOnButton(btnChoice) {
+    const btnSelector = this.btnSelectorFromChoice(btnChoice.toLowerCase())
     await this.page.waitForSelector(btnSelector)
     await this.page.click(btnSelector)
+  }
+  btnSelectorFromChoice(btnChoice) {
+    switch (btnChoice) {
+      case 'rock':
+        return '.rock'
+        break
+      case 'paper':
+        return '.paper'
+        break
+      case 'scissors':
+        return '.scissors'
+        break        
+    }
   }
 }
 
