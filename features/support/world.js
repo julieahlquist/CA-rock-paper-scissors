@@ -36,7 +36,10 @@ class RockPaperScissorsWorld {
         break
       case 'scissors':
         return '.scissors'
-        break        
+        break
+      case 'opponent':
+        return '.opponent'
+        break
     }
   }
 }
