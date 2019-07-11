@@ -9,6 +9,6 @@ Feature: Create game
     When I click 'Rock' as player 1
     And I click 'Hide player 1'
     And I click 'Scissors' as player 2
-    And I click 'Hide player 1'
-    And I click "Play!"
+    And I click 'Hide player 2'
+    And I click 'Play!'
     Then I should see 'Player 1 wins!'
