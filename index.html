@@ -11,19 +11,21 @@
 
 <body>
   <h1>Rock Paper Scissors Game</h1>
-  <form id="player1-form" onsubmit='showResult ();'>
+  <form id="player1-form">
     <input type="radio" name="choice" id="rock" value="rock"> Rock<br>
     <input type="radio" name="choice" id="paper" value="paper"> Paper<br>
     <input type="radio" name="choice" id="scissors" value="scissors"> Scissors<br>
-    <button type="submit" name="play" id="player1" value="Play!" onclick="showResult()">Play!</button>
+  </form>
+  <br>
+  <form id="player2-form">
+    <input type="radio" name="choice" id="rock" value="rock"> Rock<br>
+    <input type="radio" name="choice" id="paper" value="paper"> Paper<br>
+    <input type="radio" name="choice" id="scissors" value="scissors"> Scissors<br>
   </form>
 
-  <form id="player2-form" onsubmit='showResult ();'>
-    <input type="radio" name="choice" id="rock" value="rock"> Rock<br>
-    <input type="radio" name="choice" id="paper" value="paper"> Paper<br>
-    <input type="radio" name="choice" id="scissors" value="scissors"> Scissors<br>
-    <button type="submit" name="play" id="player2" value="Play!" onclick="showResult()">Play!</button>
-  </form>
+  <button type="submit" name="putresults" id="player1" value="Play!" onclick="Result()">Play!</button>
+
+  <div id='printresults'></div>
 
   <script src="./dist/bundle.js"></script>
 </body>
