@@ -11,11 +11,11 @@
 
 <body>
   <h1>Rock Paper Scissors Game</h1>
-  <form>
-    <input type="radio" name="choice" id="rock" checked> Rock<br>
-    <input type="radio" name="choice" id="paper"> Paper<br>
-    <input type="radio" name="choice" id="scissors"> Scissors<br>
-    <button type="submit" name="play" id="player1" class="playButton">Play!</button>
+  <form id="player1-form" onsubmit='showResult ();'>
+    <input type="radio" name="choice" id="rock" value="rock"> Rock<br>
+    <input type="radio" name="choice" id="paper" value="paper"> Paper<br>
+    <input type="radio" name="choice" id="scissors" value="scissors"> Scissors<br>
+    <input type="submit" name="play" id="player1" value="Play!" onclick="showResult()">Play!
   </form>
 
   <script src="./dist/bundle.js"></script>

@@ -8,5 +8,6 @@ Feature: Create game
     Then I should see "Rock"
     And I should see "Paper"
     And I should see "Scissors"
-    When I click "Foo"
-    And I click "Play!"
+    And I should see "Play!"
+    When I click "Play!"
+    Then I should see "and the winner is..."

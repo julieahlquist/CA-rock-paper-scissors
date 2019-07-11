@@ -26,19 +26,6 @@ class RockPaperScissorsWorld {
     await this.page.waitForSelector(btnSelector)
     await this.page.click(btnSelector)
   }
-  btnSelectorFromChoice(btnChoice) {
-    switch (btnChoice) {
-      case 'rock':
-        return '.rock'
-        break
-      case 'paper':
-        return '.paper'
-        break
-      case 'scissors':
-        return '.scissors'
-        break        
-    }
-  }
 }
 
 setWorldConstructor(RockPaperScissorsWorld)
