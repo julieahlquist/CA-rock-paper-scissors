@@ -21,8 +21,8 @@ class RockPaperScissorsWorld {
 
     expect(actualContent).to.be.eq(expectedContent)
   };
-  async clickOnButton(btnName) {
-    const btnSelector = '#player1'
+  async clickOnButton() {
+    const btnSelector = '#play'
     await this.page.waitForSelector(btnSelector)
     await this.page.click(btnSelector)
   };

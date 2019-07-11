@@ -1,14 +1,3 @@
- 
- // add toggle bar for each player!
- document.getElementById("player1-form").onsubmit = function () { 
-     showResult(
-     )}
-
-const showResult = () => {
-    var choice = document.querySelector('input[name="choice"]:checked').value;
-        document.getElementById("").addEventListener('you played ' + choice + ' and the winner is ...');
-    }
-
 function Results() {
     this.check = (player_1, player_2) => {
         if (player_1 === player_2) {
@@ -44,16 +33,3 @@ function Results() {
         }
     }
 }
-
-document.getElementById("putresults").addEventListener("click", Results);
-   
-
-
-// hit Play! and compare results and display results
-
-// if(!choice){
-//     ('No choice was selected. You lost.');
-// return false;
-// }
-// else{
-

@@ -11,23 +11,46 @@
 
 <body>
   <h1>Rock Paper Scissors Game</h1>
-  <form id="player1-form">
-    <input type="radio" name="choice" id="rock" value="rock"> Rock<br>
-    <input type="radio" name="choice" id="paper" value="paper"> Paper<br>
-    <input type="radio" name="choice" id="scissors" value="scissors"> Scissors<br>
-  </form>
+  <div class="player1">
+    <h2>Player 1</h2>
+      <form id="player1form">
+        <input type="radio" name="choice" id="rock" value="rock"> Rock<br>
+        <input type="radio" name="choice" id="paper" value="paper"> Paper<br>
+        <input type="radio" name="choice" id="scissors" value="scissors"> Scissors<br>
+      </form>
+
+    <button class="hide-player1-form" onclick="hide1()" id="hide1">Hide player 1</button>
+  </div>
+
   <br>
-  <form id="player2-form">
-    <input type="radio" name="choice" id="rock" value="rock"> Rock<br>
-    <input type="radio" name="choice" id="paper" value="paper"> Paper<br>
-    <input type="radio" name="choice" id="scissors" value="scissors"> Scissors<br>
-  </form>
 
-  <button type="submit" name="putresults" id="player1" value="Play!" onclick="Result()">Play!</button>
+  <div class="player2">
+    <h2>Player 2</h2>
+      <form id="player2form">
+        <input type="radio" name="choice" id="rock" value="rock"> Rock<br>
+        <input type="radio" name="choice" id="paper" value="paper"> Paper<br>
+        <input type="radio" name="choice" id="scissors" value="scissors"> Scissors<br>
+      </form>
 
-  <div id='printresults'></div>
+    <button class="hide-player2-form" onclick="hide2()" id="hide2">Hide player 2</button>
+  </div>
 
-  <script src="./dist/bundle.js"></script>
+  <br>
+
+  <div class="show-result">
+    <input class="show-result" type="submit" id="play" value="Play!">
+  </div>
+
+  <script src="./src/app.js"></script>
+  <script>
+    let button = document.getElementById("play")
+    let showResult = document.getElementById("show_result")
+    button.addEventListener('click', ()=>{
+      let player1 = document.getElementById('player1form').value
+      let player2 = document.getElementById('player2form').value
+      let result = results.check(player1form, player2form)
+    })
+  </script>
 </body>
 
 </html>
