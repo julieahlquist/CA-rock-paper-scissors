@@ -35,10 +35,12 @@ function Play() {
 }
 
 hide1 = () => {
-    document.getElementById("player1form").style.display = "none";
-  }
-  hide2 = () => {
-    document.getElementById("player2form").style.display = "none";
+  document.getElementById("player1form").style.display = "none";
+  document.getElementById("hide1").innerHTML = "Is it a winning move?";
+}
+hide2 = () => {
+  document.getElementById("player2form").style.display = "none";
+  document.getElementById("hide2").innerHTML = "Time to hit Play!";
 }
 
 document.getElementById("play").addEventListener("click", Play);
