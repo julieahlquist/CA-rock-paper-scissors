@@ -43,13 +43,24 @@
 
   <script src="./src/app.js"></script>
   <script>
+    document.addEventListener('DOMContentLoaded', () => {
     let button = document.getElementById("play")
     let showResult = document.getElementById("show_result")
-    button.addEventListener('click', ()=>{
+    button.addEventListener('click', () => {
       let player1 = document.getElementById('player1form').value
       let player2 = document.getElementById('player2form').value
-      let result = results.check(player1form, player2form)
+        let play = new Play
+        let result = play.check(player1form, player2form)
+        showResult.innerHTML = outcome; 
     })
+  })
+
+  hide1 = () => {
+    document.getElementById("player1form").style.display = "none";
+  }
+  hide2 = () => {
+    document.getElementById("player2form").style.display = "none";
+  }
   </script>
 </body>
 

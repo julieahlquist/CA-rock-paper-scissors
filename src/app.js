@@ -1,4 +1,4 @@
-function Results() {
+function Play() {
     this.check = (player_1, player_2) => {
         if (player_1 === player_2) {
             return 'Tie! Play again guys!'
@@ -33,3 +33,5 @@ function Results() {
         }
     }
 }
+
+document.getElementById("play").addEventListener("click", Play);
