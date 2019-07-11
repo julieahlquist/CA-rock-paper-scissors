@@ -15,7 +15,14 @@
     <input type="radio" name="choice" id="rock" value="rock"> Rock<br>
     <input type="radio" name="choice" id="paper" value="paper"> Paper<br>
     <input type="radio" name="choice" id="scissors" value="scissors"> Scissors<br>
-    <input type="submit" name="play" id="player1" value="Play!" onclick="showResult()">Play!
+    <button type="submit" name="play" id="player1" value="Play!" onclick="showResult()">Play!</button>
+  </form>
+
+  <form id="player2-form" onsubmit='showResult ();'>
+    <input type="radio" name="choice" id="rock" value="rock"> Rock<br>
+    <input type="radio" name="choice" id="paper" value="paper"> Paper<br>
+    <input type="radio" name="choice" id="scissors" value="scissors"> Scissors<br>
+    <button type="submit" name="play" id="player2" value="Play!" onclick="showResult()">Play!</button>
   </form>
 
   <script src="./dist/bundle.js"></script>
