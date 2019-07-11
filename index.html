@@ -11,15 +11,51 @@
 
 <body>
   <h1>Rock Paper Scissors Game</h1>
-  <div>
-    <button class="rock" onclick="alert('You clicked rock')">Rock</button>
-    <button class="paper" onclick="alert('You clicked paper')">Paper</button>
-    <button class="scissors" onclick="alert('You clicked scissors')">Scissors</button>
+  <div class="player1">
+    <h2>Player 1</h2>
+      <form id="player1form">
+        <input type="radio" name="choice" id="rock" value="rock"> Rock<br>
+        <input type="radio" name="choice" id="paper" value="paper"> Paper<br>
+        <input type="radio" name="choice" id="scissors" value="scissors"> Scissors<br>
+      </form>
 
-    <button class="opponent" onclick="alert('Opponent chose ...')">Opponent</button>
+    <button class="hide-player1-form" onclick="hide1()" id="hide1">Hide player 1</button>
   </div>
 
-  <script src="./dist/bundle.js"></script>
+  <br>
+
+  <div class="player2">
+    <h2>Player 2</h2>
+      <form id="player2form">
+        <input type="radio" name="choice" id="rock" value="rock"> Rock<br>
+        <input type="radio" name="choice" id="paper" value="paper"> Paper<br>
+        <input type="radio" name="choice" id="scissors" value="scissors"> Scissors<br>
+      </form>
+
+    <button class="hide-player2-form" onclick="hide2()" id="hide2">Hide player 2</button>
+  </div>
+
+  <br>
+
+  <div class="show-result">
+    <input class="show-result" type="submit" id="play" value="Play!">
+  </div>
+
+  <script src="./src/app.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+    let button = document.getElementById("play")
+    let showResult = document.getElementById("show_result")
+    button.addEventListener('click', () => {
+      let player1 = document.getElementById('player1form').value
+      let player2 = document.getElementById('player2form').value
+        let play = new Play
+        let result = play.check(player1form, player2form)
+        showResult.innerHTML = outcome; 
+    })
+  })
+
+  </script>
 </body>
 
 </html>

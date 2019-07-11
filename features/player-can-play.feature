@@ -5,12 +5,9 @@ Feature: Create game
 
   Scenario: Player can choose rock, paper or scissors
     Given I visit the site
-    Then I should see "Rock"
-    And I should see "Paper"
-    And I should see "Scissors"
-    When I click "Rock"
-    Then I should see "You clicked rock"
-    When I click "Paper"
-    Then I should see "You clicked paper"
-    When I click "Scissors"
-    Then I should see "You clicked scissors"
+    Then I should see 'Rock'
+    When I click 'Rock' as player 1
+    And I click 'Hide player 1'
+    And I click 'Scissors' as player 2
+    And I click 'Hide player 2'
+    And I click 'Play!'

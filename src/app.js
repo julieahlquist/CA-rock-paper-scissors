@@ -1,12 +1,46 @@
-document.getElementById("rock").addEventListener("click", function () {
-    console.log('you clicked rock')
-})
+function Play() {
+    this.check = (player_1, player_2) => {
+        if (player_1 === player_2) {
+            return 'Tie! Play again guys!'
+        }
 
-const showOpponent = () => {
-    let opponent = ['Rock', 'Paper', 'Scissors'];
+        else if ((player_1 === "rock") && (player_2 === "paper")) {
+            return 'Player 2 wins!'
+        }
 
-    let randoOpponent = opponent[Math.floor(Math.random() * opponent.length)];
-    let displayOpponent = document.getElementById('printooponent');
-    displayOpponent.innerHTML = randoOpponent
+        else if ((player_1 === "scissors") && (player_2 === "paper")) {
+            return 'Player 1 wins!'
+        }
+
+        else if ((player_1 === "scissors") && (player_2 === "rock")) {
+            return 'Player 2 wins!'
+        }
+
+        else if ((player_1 === "paper") && (player_2 === "rock")) {
+            return 'Player 1 wins!'
+        }
+
+        else if ((player_1 === "paper") && (player_2 === "scissors")) {
+            return 'Player 2 wins!'
+        }
+
+        else if ((player_1 === "rock") && (player_2 === "scissors")) {
+            return 'Player 1 wins!'
+        }
+
+        else {
+            return 'No throws guys... try again!'
+        }
+    }
 }
-document.getElementById("putopponent").addEventListener("click", showOpponent);
+
+hide1 = () => {
+  document.getElementById("player1form").style.display = "none";
+  document.getElementById("hide1").innerHTML = "Is it a winning move?";
+}
+hide2 = () => {
+  document.getElementById("player2form").style.display = "none";
+  document.getElementById("hide2").innerHTML = "Time to hit Play!";
+}
+
+document.getElementById("play").addEventListener("click", Play);

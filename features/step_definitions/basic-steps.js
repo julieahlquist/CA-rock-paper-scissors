@@ -12,6 +12,14 @@ Then('I should see {string}', async function(content) {
   return await this.pageHasTextContent(content)
 })
 
+When('I click {string} as player 1', async function (string) {
+  return await this.clickOnButton(string)
+});
+
+When('I click {string} as player 2', async function (string) {
+  return await this.clickOnButton(string)
+});
+
 When('I click {string}', async function (string) {
   return await this.clickOnButton(string)
 })
