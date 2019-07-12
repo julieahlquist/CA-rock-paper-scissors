@@ -10,9 +10,9 @@
 </head>
 
 <body>
-  <h1>Rock Paper Scissors Game</h1>
+  <h1 style="color:olivedrab; font-family:monospace">Rock Paper Scissors Game</h1>
   <div class="player1">
-    <h2>Player 1</h2>
+    <h2 style="color:olivedrab; font-family:monospace">Player 1</h2>
       <form id="player1form">
         <input type="radio" name="choice" id="rock" value="rock"> Rock<br>
         <input type="radio" name="choice" id="paper" value="paper"> Paper<br>
@@ -25,7 +25,7 @@
   <br>
 
   <div class="player2">
-    <h2>Player 2</h2>
+    <h2 style="color:olivedrab; font-family:monospace"">Player 2</h2>
       <form id="player2form">
         <input type="radio" name="choice" id="rock" value="rock"> Rock<br>
         <input type="radio" name="choice" id="paper" value="paper"> Paper<br>
@@ -49,7 +49,7 @@
     button.addEventListener('click', () => {
       let player1 = document.getElementById('player1form').value
       let player2 = document.getElementById('player2form').value
-      
+
         let result = play.check(player1form, player2form)
         showResult.innerHTML = outcome; 
     })
