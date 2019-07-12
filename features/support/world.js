@@ -37,6 +37,12 @@ class RockPaperScissorsWorld {
       case 'scissors':
         return '#scissors'
         break
+      case 'hide player 1':
+        return '#hide1'
+        break
+      case 'hide player 2':
+        return '#hide2'
+        break
       default:
         throw `${btnName} button is not defined`
         break

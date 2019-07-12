@@ -38,7 +38,7 @@ let hide1Btn = document.getElementById("hide1")
 hide1Btn.addEventListener("click", () => {
     document.getElementById("player1form").style.display = "none";
     document.getElementById("hide1").innerHTML = "Is it a winning move?";
-})
+});
 
 let hide2Btn = document.getElementById("hide2")
 hide2Btn.addEventListener("click", () => {

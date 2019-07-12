@@ -6,8 +6,10 @@ Feature: Create game
   Scenario: Player can choose rock, paper or scissors
     Given I visit the site
     Then I should see 'Rock'
-    When I click 'Rock' as player 1
+    When I fill 'Rock' as player 1
     And I click 'Hide player 1'
-    And I click 'Scissors' as player 2
+    Then I should see 'Is it a winning move'
+    And I fill 'Scissors' as player 2
     And I click 'Hide player 2'
+    Then I should see 'Time to hit Play!'
     And I click 'Play!'

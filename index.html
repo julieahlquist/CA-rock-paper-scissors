@@ -19,13 +19,13 @@
         <input type="radio" name="choice" id="scissors" value="scissors"> Scissors<br>
       </form>
 
-    <button class="hide-player1-form" name="hide_1" id="hide1">Hide player 1</button>
+    <button class="hide-player1-form" id="hide1">Hide player 1</button>
   </div>
 
   <br>
 
   <div class="player2">
-    <h2 style="color:olivedrab; font-family:monospace"">Player 2</h2>
+    <h2 style="color:olivedrab; font-family:monospace">Player 2</h2>
       <form id="player2form">
         <input type="radio" name="choice" id="rock" value="rock"> Rock<br>
         <input type="radio" name="choice" id="paper" value="paper"> Paper<br>
@@ -44,11 +44,11 @@
   <script src="./dist/bundle.js"></script>
   <script>
     document.addEventListener('DOMContentLoaded', () => {
-    let button = document.getElementById("play")
-    let showResult = document.getElementById("show_result")
+    let Play = document.getElementById("play")
+    let showResult = 
     button.addEventListener('click', () => {
-      let player1 = document.getElementById('player1form').value
-      let player2 = document.getElementById('player2form').value
+      let player1form = document.getElementById('player1form').value
+      let player2form = document.getElementById('player2form').value
 
         let result = play.check(player1form, player2form)
         showResult.innerHTML = outcome; 
