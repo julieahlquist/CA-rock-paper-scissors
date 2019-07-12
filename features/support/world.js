@@ -27,16 +27,18 @@ class RockPaperScissorsWorld {
     await this.page.click(btnSelector)
   };
   btnSelectorFromName(btnName) {
-    switch (btnName) {
-      case 'add contact':
-        return '.add-contact'
-        break
-      case 'save contact':
-        return '.save-contact'
-        break
-      default:
-        throw `${btnName} button is not defined`
-        break
+    if (btnName === 'rock') {
+      return '#rock'
+    } else if (btnName === 'paper') {
+        return '#paper'
+    } else if (btnName === 'scissors') {
+        return '#scissors'
+      } else if (btnName === 'hide_1') {
+        return '#hide1'
+      } else if (btnName === 'hide_2') {
+        return '#hide2'
+    } else {
+       `${btnName} button is not defined`
     }
   }
 };
