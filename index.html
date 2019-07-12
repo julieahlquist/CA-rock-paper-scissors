@@ -19,7 +19,7 @@
         <input type="radio" name="choice" id="scissors" value="scissors"> Scissors<br>
       </form>
 
-    <button class="hide-player1-form" onclick="hide1()" id="hide1">Hide player 1</button>
+    <button class="hide-player1-form" id="hide1">Hide player 1</button>
   </div>
 
   <br>
@@ -32,7 +32,7 @@
         <input type="radio" name="choice" id="scissors" value="scissors"> Scissors<br>
       </form>
 
-    <button class="hide-player2-form" onclick="hide2()" id="hide2">Hide player 2</button>
+    <button class="hide-player2-form" id="hide2">Hide player 2</button>
   </div>
 
   <br>
@@ -41,7 +41,7 @@
     <input class="show-result" type="submit" id="play" value="Play!">
   </div>
 
-  <script src="./src/app.js"></script>
+  <script src="./dist/bundle.js"></script>
   <script>
     document.addEventListener('DOMContentLoaded', () => {
     let button = document.getElementById("play")
@@ -54,7 +54,6 @@
         showResult.innerHTML = outcome; 
     })
   })
-
   </script>
 </body>
 

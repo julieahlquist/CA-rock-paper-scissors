@@ -34,13 +34,17 @@ function Play() {
     }
 }
 
-hide1 = () => {
-  document.getElementById("player1form").style.display = "none";
-  document.getElementById("hide1").innerHTML = "Is it a winning move?";
-}
-hide2 = () => {
-  document.getElementById("player2form").style.display = "none";
-  document.getElementById("hide2").innerHTML = "Time to hit Play!";
-}
+let hide1Btn = document.getElementById("hide1")
+hide1Btn.addEventListener("click", () => {
+    document.getElementById("player1form").style.display = "none";
+    document.getElementById("hide1").innerHTML = "Is it a winning move?";
+})
+
+let hide2Btn = document.getElementById("hide2")
+hide2Btn.addEventListener("click", () => {
+    document.getElementById("player2form").style.display = "none";
+    document.getElementById("hide2").innerHTML = "Time to hit Play!";
+})
+
 
 document.getElementById("play").addEventListener("click", Play);
