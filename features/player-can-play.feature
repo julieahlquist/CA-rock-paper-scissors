@@ -13,3 +13,4 @@ Feature: Create game
     And I click 'Hide player 2'
     Then I should see 'Time to hit Play!'
     And I click 'Play!'
+    Then I should see 'Player 1 wins!'
