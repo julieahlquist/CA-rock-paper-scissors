@@ -18,7 +18,6 @@
         <input type="radio" name="choice" id="paper" value="paper"> Paper<br>
         <input type="radio" name="choice" id="scissors" value="scissors"> Scissors<br>
       </form>
-
     <button class="hide-player1-form" id="hide1">Hide player 1</button>
   </div>
 
@@ -37,24 +36,11 @@
 
   <br>
 
-  <div class="show-result">
-    <input class="show-result" type="submit" id="play" value="Play!">
+  <div class="text-left" id="display_answer">
+    <input class="rounded-full" type="submit" id="play" value="Play!">
   </div>
 
-  <script src="./dist/bundle.js"></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-    let Play = document.getElementById("play")
-    let showResult = 
-    button.addEventListener('click', () => {
-      let player1form = document.getElementById('player1form').value
-      let player2form = document.getElementById('player2form').value
-
-        let result = play.check(player1form, player2form)
-        showResult.innerHTML = outcome; 
-    })
-  })
-  </script>
+  <script src="./src/app.js"></script>
 </body>
 
 </html>

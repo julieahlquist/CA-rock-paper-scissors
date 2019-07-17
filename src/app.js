@@ -1,3 +1,15 @@
+document.addEventListener('DOMContentLoaded', () => {
+    let button = document.getElementById("play")
+    let displayDiv = document.getElementById("display_answer")
+    button.addEventListener('click', () => {
+      let player1form = document.getElementById('player1form').value
+      let player2form = document.getElementById('player2form').value
+      let play = new Play
+        let result = play.check(player1form, player2form)
+        displayDiv.innerHTML = result; 
+    })
+  })
+
 function Play() {
     this.check = (player_1, player_2) => {
         if (player_1 === player_2) {
@@ -45,6 +57,14 @@ hide2Btn.addEventListener("click", () => {
     document.getElementById("player2form").style.display = "none";
     document.getElementById("hide2").innerHTML = "Time to hit Play!";
 })
+
+let radios = document.getElementByName('choice');
+for (let i = 0, length = radio.length; i < length; i++) {
+  if (radios[i].checked) {
+    alert(radios[i].value);
+    break;
+  }
+}
 
 
 document.getElementById("play").addEventListener("click", Play);
