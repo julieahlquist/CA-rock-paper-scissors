@@ -13,35 +13,35 @@ document.addEventListener('DOMContentLoaded', () => {
 function Play() {
     this.check = (player_1, player_2) => {
         if (player_1 === player_2) {
-            return 'Tie! Play again guys!'
+            return 'Tie! Play again guys!';
         }
 
         else if ((player_1 === "rock") && (player_2 === "paper")) {
-            return 'Player 2 wins!'
+            return 'Player 2 wins!';
         }
 
         else if ((player_1 === "scissors") && (player_2 === "paper")) {
-            return 'Player 1 wins!'
+            return 'Player 1 wins!';
         }
 
         else if ((player_1 === "scissors") && (player_2 === "rock")) {
-            return 'Player 2 wins!'
+            return 'Player 2 wins!';
         }
 
         else if ((player_1 === "paper") && (player_2 === "rock")) {
-            return 'Player 1 wins!'
+            return 'Player 1 wins!';
         }
 
         else if ((player_1 === "paper") && (player_2 === "scissors")) {
-            return 'Player 2 wins!'
+            return 'Player 2 wins!';
         }
 
         else if ((player_1 === "rock") && (player_2 === "scissors")) {
-            return 'Player 1 wins!'
+            return 'Player 1 wins!';
         }
 
         else {
-            return 'No throws guys... try again!'
+            return 'No throws guys... try again!';
         }
     }
 }
@@ -57,14 +57,3 @@ hide2Btn.addEventListener("click", () => {
     document.getElementById("player2form").style.display = "none";
     document.getElementById("hide2").innerHTML = "Time to hit Play!";
 })
-
-let radios = document.getElementByName('choice');
-for (let i = 0, length = radio.length; i < length; i++) {
-  if (radios[i].checked) {
-    alert(radios[i].value);
-    break;
-  }
-}
-
-
-document.getElementById("play").addEventListener("click", Play);
