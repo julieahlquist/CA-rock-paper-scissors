@@ -13,23 +13,23 @@ var player1choice = "none"
 var player2choice = "none"
 
 function play(player1choice, player2choice) {
-        if (player1choice === player2choice) {
-            return 'Tie! Play again guys!';
-        }   else if ((player1choice === "rock") && (player2choice === "paper")) {
-            return 'Player 2 wins!';
-        }   else if ((player1choice=== "scissors") && (player2choice === "paper")) {
-            return 'Player 1 wins!';
-        }   else if ((player1choice === "scissors") && (player2choice === "rock")) {
-            return 'Player 2 wins!';
-        }   else if ((player1choice === "paper") && (player2choice === "rock")) {
-            return 'Player 1 wins!';
-        }   else if ((player1choice === "paper") && (player2choice === "scissors")) {
-            return 'Player 2 wins!';
-        }   else if ((player1choice === "rock") && (player2choice === "scissors")) {
-            return 'Player 1 wins!';
-        }   else {
-            return 'No throws guys... try again!';
+    let resultMessage
+    const [p1WinMessage, p2WinMessage, tieMessage] = ['Player 1 wins!', 'Player 2 wins!', 'It is a tie!']
+    switch ([player1choice, player2choice].join (' ')) {
+        case ['rock', 'scissors'].join(' '):
+        case ['scissors', 'paper'].join(' '):
+        case ['paper', 'rock'].join(' '):
+            resultMessage = p1WinMessage
+            break
+        case ['rock', 'paper'].join(' '):
+        case ['paper', 'scissors'].join(' '):
+        case ['scissors', 'rock'].join(' '):
+            resultMessage = p2WinMessage
+            break
+        default:
+            resultMessage = tieMessage
         }
+    return resultMessage
 }
 
 let hide1Btn = document.getElementById("hide1")
