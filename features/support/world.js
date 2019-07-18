@@ -29,14 +29,23 @@ class RockPaperScissorsWorld {
   btnSelectorFromName(btnName) {
     switch (btnName) {
       case 'rock':
-        return '#rock'
+        return '#p1rock'
         break
       case 'paper':
-        return '#paper'
+        return '#p1paper'
         break
       case 'scissors':
-        return '#scissors'
+        return '#p1scissors'
         break
+        case 'rock':
+          return '#p2rock'
+          break
+        case 'paper':
+          return '#p2paper'
+          break
+        case 'scissors':
+          return '#p2scissors'
+          break
       case 'hide player 1':
         return '#hide1'
         break
