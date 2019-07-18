@@ -8,42 +8,42 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Bungee+Outline|Dosis:800&display=swap" rel="stylesheet">
   <link rel="shortcut icon" href="#">
   <title>Rock Paper Scissors Game</title>
 </head>
 
 <body>
   <br>
-  <br>
-  <div class="ui raised very padded text container segment ">
-  <h1 style="color:olivedrab; font-family:monospace">Rock Paper Scissors Game</h1>
-  <div class="player1">
-    <h2 style="color:olivedrab; font-family:monospace">Player 1</h2>
+  <h1 style="color:white; font-family: 'Bungee Outline', cursive; font-size: 48px; text-align: center; ">Rock Paper Scissors</h1>
+  <div class="ui raised very padded text container segment">
+  <div style="player1">
+    <h2 style="color: rgb(151, 151, 151); font-family: 'Dosis', sans-serif; font-size: 32px;">Player 1</h2>
       <form id="player1form">
         <input type="radio" name="choice" id="p1rock" value="p1rock"> Rock<br>
         <input type="radio" name="choice" id="p1paper" value="p1paper"> Paper<br>
         <input type="radio" name="choice" id="p1scissors" value="p1scissors"> Scissors<br>
       </form>
-    <button class="hide-player1-form" id="hide1">Hide player 1</button>
+    <button class="ui toggle button" id="hide1">Hide player 1</button>
   </div>
 
   <br>
 
   <div class="player2">
-    <h2 style="color:olivedrab; font-family:monospace">Player 2</h2>
+    <h2 style="color:rgb(151, 151, 151); font-family: 'Dosis', sans-serif; font-size: 32px;">Player 2</h2>
       <form id="player2form">
         <input type="radio" name="choice" id="p2rock" value="p2rock"> Rock<br>
         <input type="radio" name="choice" id="p2paper" value="p2paper"> Paper<br>
         <input type="radio" name="choice" id="p2scissors" value="p2scissors"> Scissors<br>
       </form>
 
-    <button class="hide-player2-form" name="hide_2" id="hide2">Hide player 2</button>
+    <button class="ui toggle button" name="hide_2" id="hide2">Hide player 2</button>
   </div>
 
   <br>
 
   <div class="text-left" id="display_answer">
-    <input class="rounded-full" type="submit" id="play" value="Play!">
+    <input class="fluid ui button" type="submit" id="play" value="Play!">
   </div>
 
   </div>
