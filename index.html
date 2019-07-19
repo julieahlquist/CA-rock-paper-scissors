@@ -6,8 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Bungee+Outline|Dosis:800&display=swap" rel="stylesheet">
   <link rel="shortcut icon" href="#">
   <title>Rock Paper Scissors Game</title>
@@ -17,7 +15,8 @@
   <br>
   <h1 style="color:white; font-family: 'Bungee Outline', cursive; font-size: 48px; text-align: center; ">Rock Paper Scissors</h1>
   <div class="ui raised very padded text container segment">
-  <div style="player1">
+  <div class="flex-container1">
+    <div class="item">
     <h2 style="color: rgb(151, 151, 151); font-family: 'Dosis', sans-serif; font-size: 32px;">Player 1</h2>
       <form id="player1form">
         <input type="radio" name="choice" id="p1rock" value="p1rock"> Rock<br>
@@ -27,9 +26,7 @@
     <button class="ui toggle button" id="hide1">Hide player 1</button>
   </div>
 
-  <br>
-
-  <div class="player2">
+  <div class="item">
     <h2 style="color:rgb(151, 151, 151); font-family: 'Dosis', sans-serif; font-size: 32px;">Player 2</h2>
       <form id="player2form">
         <input type="radio" name="choice" id="p2rock" value="p2rock"> Rock<br>
@@ -39,17 +36,18 @@
 
     <button class="ui toggle button" name="hide_2" id="hide2">Hide player 2</button>
   </div>
+</div>
 
   <br>
-
+  <div class="flex-container2">
   <div class="text-left" id="display_answer">
-    <input class="fluid ui button" type="submit" id="play" value="Play!">
+    <button class="fluid ui button" type="submit" id="play">Play!</button>
   </div>
 
   <div>
     <button class="fluid ui button" type="submit"  id="refresh" onClick="refreshPage()">New Game</button>
   </div>
-  </div>
+</div>
 
   <script src="./src/app.js"></script>
 </body>
