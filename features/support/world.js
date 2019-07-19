@@ -55,6 +55,9 @@ class RockPaperScissorsWorld {
       case 'play!':
         return '#play'
         break
+        case 'new game':
+          return '#refresh'
+          break
       default:
         throw `${btnName} button is not defined`
         break

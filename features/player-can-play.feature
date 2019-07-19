@@ -14,3 +14,5 @@ Feature: Create game
     Then I should see 'Time to hit Play!'
     And I click 'Play!'
     Then I should see 'It is a tie!'
+    And I click 'New Game'
+    Then I visit the site

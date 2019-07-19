@@ -22,4 +22,8 @@ When('I fill {string} as player 2', async function (string) {
 
 When('I click {string}', async function (string) {
   return await this.clickOnButton(string)
+})
+
+When('I click New Game', async function (string) {
+  return await this.openHomePage()
 });
