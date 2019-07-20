@@ -5,17 +5,14 @@ html, body {
     margin: 0 !important;
     width:  100% !important;
     height: 100% !important;
-    font-size: 15px !important;
     color: white !important;
 }
-
-button {
+.hide {
     background-color: pink;
     border: none;
     color: white;
     padding: 4px 32px;
     text-align: center;
-    text-decoration: none;
     display: inline-block;
     font-size: 16px;
     margin: 4px 2px;
@@ -23,9 +20,27 @@ button {
     transition-duration: 0.4s;
     cursor: pointer;
     border-radius: 25px;
+    position: relative;
 }
-.inner {
+#hide1 {
+    left: 30%
+}
+#hide2 {
+    left: 30%
+}
+button {
+    background-color: pink;
+    border: none;
+    color: white;
+    padding: 4px 32px;
+    text-align: center;
     display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 25px;
 }
 .flex-container1 {
     padding: 0;
@@ -38,8 +53,9 @@ button {
 }
 .item {
     flex-shrink: 2;
-    width: 200px;
-    align-content: center;
+    width: 375px;
+    align-content: flex-end;
+    margin: auto;
 }
 .flex-container2 {
     padding: 0;
@@ -49,4 +65,7 @@ button {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+}
+.title {
+    text-align: center;
 }
