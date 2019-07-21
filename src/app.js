@@ -14,8 +14,11 @@ var player2choice = "none"
 
 function play(player1choice, player2choice) {
     let resultMessage
-    const [p1WinMessage, p2WinMessage, tieMessage] = ['Player 1 wins!', 'Player 2 wins!', 'It is a tie!']
+    const [errorMessage, p1WinMessage, p2WinMessage, tieMessage] = ['You have not chosen a throw. Try again!', 'Player 1 wins!', 'Player 2 wins!', 'It is a tie!']
     switch ([player1choice, player2choice].join (' ')) {
+        case ['none', 'none'].join (' '):
+            resultMessage = errorMessage
+            break
         case ['rock', 'scissors'].join(' '):
         case ['scissors', 'paper'].join(' '):
         case ['paper', 'rock'].join(' '):
