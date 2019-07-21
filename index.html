@@ -6,18 +6,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css?family=Bungee+Outline|Dosis:800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Galindo&display=swap" rel="stylesheet">
   <link rel="shortcut icon" href="#">
   <title>Rock Paper Scissors Game</title>
 </head>
 
 <body>
   <br>
-  <h1 style="color:white; font-family: 'Bungee Outline', cursive; font-size: 48px; text-align: center; ">Rock Paper Scissors</h1>
+  <h1 id="title-top" style="color:white; font-family: 'Galindo', cursive; font-size: 48px; text-align: center; ">Rock Paper Scissors</h1>
   <div class="ui raised very padded text container segment">
   <div class="flex-container1">
     <div class="item">
-    <h2 class="title" style="font-family: 'Dosis', sans-serif; font-size: 32px;">Player 1</h2>
+    <h2 class="title" style="font-family: 'Galindo', sans-serif; font-size: 32px;">Player 1</h2>
     <form id="player1form">
         <label>
         <input type="radio" name="choice" id="p1rock" value="p1rock">
@@ -36,8 +36,12 @@
     <button class="hide" id="hide1">Hide player 1</button>
   </div>
 
+  <div id="display_answer">
+      <button class="title" type="submit" id="play" style="font-family: 'Galindo', sans-serif; font-size: 32px;">PLAY!</button>
+  </div>
+
   <div class="item">
-    <h2 class="title" style="font-family: 'Dosis', sans-serif; font-size: 32px;">Player 2</h2>
+    <h2 class="title" style="font-family: 'Galindo', sans-serif; font-size: 32px;">Player 2</h2>
       <form id="player2form">
           <label>
               <input type="radio" name="choice" id="p2rock" value="p2rock">
@@ -59,9 +63,6 @@
 
   <br>
   <div class="flex-container2">
-  <div id="display_answer">
-    <button class="new-action" type="submit" id="play">Play!</button>
-    </div>
     <div>
     <button class="new-action" type="submit"  id="refresh" onClick="refreshPage()">New Game</button>
   </div>
