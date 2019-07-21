@@ -62,3 +62,6 @@ hide2Btn.addEventListener("click", () => {
         player2choice = "scissors"
     }
 })
+function refreshPage(){
+    window.location.reload();
+} 
