@@ -16,3 +16,8 @@ Feature: Create game
     Then I should see 'It is a tie!'
     And I click 'New Game'
     Then I visit the site
+
+  Scenario: Players do not pick a throw
+    When I fill ' ' as player 1
+    And I fill ' ' as player 2
+    Then I should see 'You have not chosen a throw. Try again!'
