@@ -6,6 +6,8 @@ html, body {
     width:  100% !important;
     height: 100% !important;
     color: white !important;
+    font-family: 'Galindo', sans-serif;
+    text-shadow: -0.5px 0 black, 0 0.5px black, 0.5px 0 black, 0 -0.5px black;
 }
 button {
     background-color:transparent;
@@ -45,6 +47,7 @@ button:focus {
 .item {
     flex-shrink: 2;
     width: 310px;
+    height: 310px;
     align-content: center;
     margin: auto;
 }
