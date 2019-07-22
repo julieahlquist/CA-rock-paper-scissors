@@ -6,9 +6,11 @@ html, body {
     width:  100% !important;
     height: 100% !important;
     color: white !important;
+    font-family: 'Galindo', sans-serif;
+    text-shadow: -0.5px 0 black, 0 0.5px black, 0.5px 0 black, 0 -0.5px black;
 }
 button {
-    background-color: pink;
+    background-color:transparent;
     border: none;
     color: white;
     padding: 10px;
@@ -17,11 +19,17 @@ button {
     font-size: 16px;
     margin: 4px 2px;
     -webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
-    cursor: pointer;
+    transition-duration: 0s;
     border-radius: 10px;
     position: relative;
     width: 300px;
+}
+button:hover {
+    transform: scale(1.1);
+}
+button:focus {
+    outline: none;
+    outline-offset: -4px;
 }
 #new-action {
     position: relative;
@@ -39,6 +47,7 @@ button {
 .item {
     flex-shrink: 2;
     width: 310px;
+    height: 310px;
     align-content: center;
     margin: auto;
 }
@@ -51,11 +60,19 @@ button {
     flex-wrap: wrap;
 }
 .title {
-    background-color: pink;
     text-align: center;
     border-radius: 10px;
     position: relative;
     width: 300px;
+    font-family: 'Galindo', sans-serif;
+    text-shadow: -1px 0 black, 0 2px black, 1px 0 black, 0 -1px black;
+}
+#title-top {
+    text-shadow: -1px 0 black, 0 3px black, 1px 0 black, 0 -1px black;
+}
+.hide {
+    font-family: 'Galindo', cursive;
+    text-shadow: -0.5px 0 black, 0 0.5px black, 0.5px 0 black, 0 -0.5px black;
 }
 [type=radio] { 
     position: absolute;
