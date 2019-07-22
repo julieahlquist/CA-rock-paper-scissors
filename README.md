@@ -25,7 +25,10 @@ __________
 `````
 $ yarn add cucumber chai puppeteer superstatic --dev
 ``````
-
 ____________
 ### Ackknowledgements
-Thank you to [Craft Academy](https://craftacademy.se/) in Stockholm, Sweden for crafting this challenge.
+Thank you to [Craft Academy](https://craftacademy.se/) for crafting this challenge.
+
+Thanks to [noelryn](https://github.com/Noelryn) and [sethnejame](https://github.com/sethnejame) for valid input. 
+
+Icons made by [Freepik](https://www.freepik.com/) from [Flaticon](www.flaticon.com).
